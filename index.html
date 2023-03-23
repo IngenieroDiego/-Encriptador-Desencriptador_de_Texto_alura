@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Encriptador / Desencriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="icon.png" alt="Icono del encriptador/desencriptador de texto">
+        <h1>Encriptador / Desencriptador de texto</h1>
+      </header>
+      <div class="options">
+        <label for="method">Método:</label>
+        <select id="method">
+          <option value="1">Encriptar</option>
+          <option value="2">Desencriptar</option>
+        </select>
+      </div>
+      <div class="input-output">
+        <div class="input">
+          <label for="input-text">Texto:</label>
+          <textarea id="input-text"></textarea>
+        </div>
+        <div class="output">
+          <label for="output-text">Resultado:</label>
+          <textarea id="output-text" readonly></textarea>
+          <button id="copy-btn" onclick="copyOutput()">Copiar al portapapeles</button>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="process-btn" onclick="process()">Procesar</button>
+        <button id="clear-btn" onclick="clearForm()">Limpiar</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
