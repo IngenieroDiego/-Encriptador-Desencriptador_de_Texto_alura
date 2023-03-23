@@ -179,7 +179,33 @@ button:active {
     height: 40px;
     margin-right: 5px;
   }
-
-  h1 {
+h1 {
     font-size: 24px;
   }
+
+  .method {
+    flex-direction: column;
+  }
+
+  .method label {
+    margin-bottom: 10px;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .input-output-buttons {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "input"
+      "output"
+      "buttons"
+      "method";
+  }
+
+  .method {
+    grid-area: method;
+  }
+}
