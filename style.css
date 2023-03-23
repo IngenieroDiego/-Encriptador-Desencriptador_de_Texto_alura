@@ -208,4 +208,31 @@ h1 {
   .method {
     grid-area: method;
   }
+  @media screen and (max-width: 768px) {
+  /* ... Código existente ... */
+
+  textarea {
+    height: 120px;
+    overflow-y: auto;
+  }
+
+  .input-output-buttons {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "input"
+      "output"
+      "buttons"
+      "method";
+  }
+
+  .input-output {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .output {
+    text-align: center;
+  }
+}
 }
